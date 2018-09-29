@@ -5,11 +5,14 @@ api_version: 1
 
 handlers:
 # Serve images as static resources.
+- url: /
+  script: helloworld.html
+
 - url: /(.+\.(gif|png|jpg))$
   static_files: \1
   upload: .+\.(gif|png|jpg)$
   application_readable: true
 
 # Serve php scripts.
-- url: /(.+\.php)$
+- url: /(.+\.php|html)$
   script: \1
