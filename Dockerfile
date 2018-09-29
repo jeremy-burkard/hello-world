@@ -4,5 +4,4 @@
 FROM scratch
 MAINTAINER Jeremy Burkard (jeremy@jburkard.com)
 ADD . app/
-WORKDIR app/
 EXPOSE 8080
