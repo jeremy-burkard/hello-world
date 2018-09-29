@@ -1,0 +1,4 @@
+## YAML Template.
+---
+runtime: php55
+api_version: 1
