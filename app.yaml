@@ -4,6 +4,12 @@ runtime: php55
 api_version: 1
 
 handlers:
+
+- url: /helloworld.html
+  mime_type: text/html
+  static_files: helloworld.html
+  upload: helloworld.html
+  
 # Serve images as static resources.
 #- url: /
 #  static_files: helloworld.html
