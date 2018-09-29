@@ -1,13 +1,19 @@
 ## YAML Template.
 ---
+application: HelloWorld
+version: 0.1
 runtime: php55
 api_version: 1
 
 handlers:
 # Serve images as static resources.
-- url: /
+- url: /$
   static_files: helloworld.html
   upload: helloworld.html
+  
+- url: /(.+)
+  static_files: \1
+  upload: (.*)
 
 - url: /(.+\.(gif|png|jpg))$
   static_files: \1
