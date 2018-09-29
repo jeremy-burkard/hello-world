@@ -7,6 +7,7 @@ handlers:
 # Serve images as static resources.
 - url: /
   static_files: helloworld.html
+  upload: helloworld.html
 
 - url: /(.+\.(gif|png|jpg))$
   static_files: \1
