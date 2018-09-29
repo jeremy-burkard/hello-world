@@ -5,3 +5,5 @@ steps:
       args: ['build', '-t', 'gcr.io/my-hello-world-217616/my-feature', '.']
     - name: 'gcr.io/cloud-builders/docker'
       args: ['push', 'gcr.io/my-hello-world-217616/my-feature']
+    - name: 'gcr.io/cloud-builders/gcloud'
+      args: ['app', 'deploy']
