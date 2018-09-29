@@ -6,7 +6,7 @@ api_version: 1
 handlers:
 # Serve images as static resources.
 - url: /
-  script: helloworld.html
+  static_files: helloworld.html
 
 - url: /(.+\.(gif|png|jpg))$
   static_files: \1

@@ -3,5 +3,5 @@
 # and open the template in the editor.
 FROM scratch
 MAINTAINER Jeremy Burkard (jeremy@jburkard.com)
-ADD . app/
+ADD .
 EXPOSE 8080
