@@ -1,9 +1,0 @@
-## YAML Template.
----
-steps:
-    - name: 'gcr.io/cloud-builders/docker'
-      args: ['build', '-t', 'gcr.io/my-hello-world-217616/$BRANCH_NAME', '.']
-    - name: 'gcr.io/cloud-builders/docker'
-      args: ['push', 'gcr.io/my-hello-world-217616/$BRANCH_NAME']
-    - name: 'gcr.io/cloud-builders/gcloud'
-      args: ['app', 'deploy']
